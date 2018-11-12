@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container " style="height: 100vh;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;" background-image>
+            <a class="navbar-brand" href="#">
+                <img src="https://image.shutterstock.com/image-vector/burger-logo-260nw-672501460.jpg" width="50"
+                    height="50" alt="">
+                Burguer Place
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#tab1">Novo Pedido <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#tab2">Anular Pedidos</a>
+                        <a class="nav-item nav-link" href="#tab3">Pesquisar Facturas</a>
+                    </div>
+                </div>
+        </nav>
+        <div id="tab1" class="h-100">
+            <div class="page-header">
+                <h2>Novo Pedido</h2>
+            </div>
+
+            <form action="" id="myform">
+                <div class="form-group border">
+                    <label for="firstName"> Nome: </label>
+                    <br>
+                    <input id="firstName" type="text" placeholder="Insira o seu nome" required>
+                    <br>
+                    <br>
+                    <p> O seu pedido </p>
+                    <label> Artigo </label>
+                    <input id="artigo" type="text" required>
+                    <br>
+                    <label> Personlize o seu pedido </label>
+                    <input id="extra" type="text">
+                    <br>
+                </div>
+            </form>
+            <br>
+            <h3 style="font-size:20px"> Resumo do Pedido: </h3>
+            <div id="table" class="table-bordered table-hover">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Cliente</th>
+
+                        </tr>
+                    <tbody id="conteudo-tabela">
+
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+            <br>
+            <br>
+            <button class="btn-secondary" onclick="principal()"> Submeter Pedido </button>
+            <button class="btn-secondary" onclick="clearForm()"> Criar Novo Pedido </button>
+        </div>
+        <div id="tab2" class="h-100">
+            <div class="page-header">
+                <h2>tab2</h2>
+            </div>
+        </div>
+        <div id="tab3" class="h-100">
+            <div class="page-header">
+                <h2>tab3</h2>
+            </div>
+        </div>Î
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../Aula 11/classes.js"></script>
+    <script src="../Aula 11/main.js"></script>
+    <script src="../Aula 11/database.js"></script>
+    <script src="../Aula 11/utils.js"></script>
+</body>
+
+</html>

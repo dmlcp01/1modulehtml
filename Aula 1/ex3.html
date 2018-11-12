@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Registo</h1>
+    <br>
+    <br>
+    <form action="">
+        <label for="FirstName"> First Name: </label>
+        <br>
+        <input id="FirstName" type="text" placeholder="Insira o seu nome" required>
+        <br>
+        <label for="LastName">Last Name: </label>
+        <br>
+        <input id="LastName" type="text">
+        <br>
+        <label for="inputEmail"> Email: </label>
+        <br>
+        <input id="inputEmail" type="email" placeholder="Insira o seu email" required>
+        <br>
+        <label for="inputpassword">Password: </label>
+        <br>
+        <input id="inputpassword" type="password" minlength="6" required title="6 characters minimum">
+        <br>
+        <label for="gender"> Género: </label>
+        <br>
+        <input id="gender" type="radio" name="gender" value="male" checked> Male
+        <br>
+        <input id="gender" type="radio" name="gender" value="female"> Female
+        <br>
+        <input id="gender" type="radio" name="gender" value="other"> Other
+        <br>
+        <label "Clube"> Clube: </label>
+        <select name="Clube">
+            <option value="Benfica">Benfica</option>
+            <option value="Porto">Porto</option>
+            <option value="Sporting">Sporting</option>
+            <option value="Belenenses">Belenenses</option>
+        </select>
+        <p>Do you agree with our terms and conditions?:</p>
+        <input type="checkbox" name="I agree" value="I agree" required> I agree
+        <br>
+        <br>
+        <button type="submit" name="btn-login">Sign In</button>
+    </form>
+
+
+</body>
+
+</html>

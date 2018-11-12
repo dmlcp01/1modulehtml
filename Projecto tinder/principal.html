@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-size: cover;
+            }
+            .border {
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            }
+            #page1{
+                background-color: white;
+                margin-top: 5%;
+            }
+            .padding{
+            padding: 2rem;
+        }
+
+        .tab2{
+            background-color: white;
+            opacity: 50%;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+
+    <div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <nav class=" navbar fixed-top navbar-expand-md navbar-light
+            bg-light" style="background-color:white">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" width="70"
+                            height="70" alt="">
+                        Tinder dos livros
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#tab1"> Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link active" href="#tab2"> History <span class="sr-only">(current)</span></a>
+                        </div <button type="button" class="btn btn-default" aria-label="Left Align">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- card dos livros -->
+    <div style="height:1000px">
+        <div class="container padding" id="page1">
+            <div id="tab1" class="pt-5">
+                <h1 class="row justify-content-center mt-5" id="title"></h1>
+                <h6 class="row justify-content-center" id="author" style="font-size:20px"></h6>
+                <img id="image" class="row img-fluid rounded mx-auto d-block" src="" />
+                <p class="row" id="description"></p>
+            </div>
+            <div class="mx-auto row justify-content-center" style="width:100%; height:100%">
+                <button href="#" class="btn btn-success like-review" onclick="countLikes()"> Like </button>
+                <button href="#" class="btn btn-danger" onclick="countDislikes()"> Dislike </button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- tabela -->
+    <div class="container " id="page2">
+        <div style="height:1000px">
+            <div id="tab2">
+                <div class="row pt-5 mt-5">
+                    <div id="likedBooks">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <h3 font-size=4px class="pt-5">Liked Titles </h3>
+                                <tr class="table-light">
+                                    <th scope="col"> Titles </th>
+                                    <th scope="col"> Author </th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultado" class="table-light table-hover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts e jQuerry e Bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../Projecto tinder/main.js"></script>
+</body>
+
+</html>
